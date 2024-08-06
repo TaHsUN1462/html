@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Weighing Scale Calculator
+        </title>
+    </head>
+    <style>
+        button{
+            width: 150px;
+            height: 50px;
+            font-family: Times New Roman;
+            font-size: 20px;
+            color: black;
+            background: #45FF9C;
+            border: solid 0px;
+           cursor: pointer;
+            border-radius: 20px;
+            margin: 20px 20px 20px 20px;
+            position: relative;
+            left: 85px;
+            font-weight: bold;
+            
+        }
+        button:hover{
+            border-radius: 15px;
+            background: #6BFFB0;
+            transition: 0.2s;
+        }
+        button:active{
+            border-radius: 20px;
+            background: #6ADC9E;
+            transition: 0.2s;
+        }
+        div{
+            background: #2AE8FF;
+            border-radius: 20px;
+          
+            
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        input{
+            position: relative;
+            left: 70px;
+            margin: 10px 10px 10px 10px;
+            width: 200px;
+            height: 80px;
+            border-radius: 20px;
+            border: solid 0px;
+            text-align: center;
+            font-family: Monospace;
+            background: #E0FF00;
+            font-weight: bold;
+        }
+        input:active{
+            border-radius: 15px;
+            transition: 0.2s;
+        }
+        p{
+            position: relative;
+            left: 125px;
+            top: 10px;
+            font-family: Segoe UI;
+            font-weight: bold;
+        }
+    </style>
+<body style="background:#DF58BA">
+    <div class="gtp">
+        <p>Gram To Price</p>
+        <input type="number" id="gram1" placeholder="Gram">
+        <input type="number" id="kg1" placeholder="Per KG Price">
+        <button onclick="calc1()">Calculate</button><br>
+        <input type="number" id="result1" placeholder="Price" readonly="">
+    </div><br>
+    <div class="gtp">
+        <p>Price To Gram</p>
+        <input type="number" id="price1" placeholder="Price">
+        <input type="number" id="kg2" placeholder="Per KG Price">
+        <button onclick="calc2()">Calculate</button><br>
+        <input type="number" id="result2" placeholder="Gram" readonly="">
+    </div><br>
+    <div class="gtp">
+        <p>Gram To P/kG</p>
+        <input type="number" id="gram2" placeholder="Gram">
+        <input type="number" id="price2" placeholder="Price">
+        <button onclick="calc3()">Calculate</button><br>
+        <input type="number" id="result3" placeholder="Per KG Price" readonly="">
+    </div>
+    <script>
+    let gram1 = document.getElementById('gram1');
+let kg1 = document.getElementById('kg1');
+let result1 = document.getElementById('result1');
+
+function calc1() {
+    result1.value= kg1.value/1000*gram1.value;
+    kg1.value = '';
+    gram1.value=''
+}
+let price1 = document.getElementById('price1');
+let kg2 = document.getElementById('kg2');
+let result2 =document.getElementById('result2');
+function calc2() {
+    result2.value = price1.value/kg2.value*1000;
+    kg2.value ="";
+    price1.value="";
+    
+}
+let price2 = document.getElementById('price2');
+let gram2 = document.getElementById('gram2');
+let result3 =document.getElementById('result3');
+function calc3() {
+    result3.value = price2.value/(gram2.value/1000);
+    gram2.value ="";
+    price2.value="";
+    
+}
+</script>
+</body>
+</html>
