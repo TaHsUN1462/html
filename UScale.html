@@ -23,6 +23,15 @@
             font-weight: bold;
             
         }
+        .home{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 0px;
+  margin-bottom: 10px;
+  background: #DC2626;
+  color: white;
+}
         button:hover{
             border-radius: 15px;
             background: #6BFFB0;
@@ -65,8 +74,26 @@
             font-family: Segoe UI;
             font-weight: bold;
         }
+        .home{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 0px;
+  margin-bottom: 10px;
+  background: #DC2626;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.home:hover{
+  border-radius: 12px;
+}
+.home:active{
+  border-radius: 15px;
+}
     </style>
 <body style="background:#DF58BA">
+  <a href="https://tahsun1462.github.io/HOME/"><button class="home"><ion-icon name="home"></ion-icon></button></a>
     <div class="gtp">
         <p>Gram To Price</p>
         <input type="number" id="gram1" placeholder="Gram">
@@ -88,7 +115,6 @@
         <button onclick="calc3()">Calculate</button><br>
         <input type="number" id="result3" placeholder="Per KG Price" readonly="">
     </div>
-    <a href="https://tahsun1462.github.io/NRR-Calculator/">Visit NRR Calculator</a>
     <script>
     let gram1 = document.getElementById('gram1');
 let kg1 = document.getElementById('kg1');
@@ -118,5 +144,7 @@ function calc3() {
     
 }
 </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
