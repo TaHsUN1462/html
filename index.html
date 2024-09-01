@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <a href="https://tahsun1462.github.io/HOME/"><button class="home"><ion-icon name="home"></ion-icon></button></a>
+<div class="container">
+<div class="select">
+<select onchange="Status()" id="select">
+<option value="NaN">- নির্বাচন করুন -</option>
+<option value="kTp">গ্রাম থেকে দাম নির্ণয়</option>
+<option value="pTg">দাম থেকে গ্রাম নির্ণয়</option>
+<option value="gTpk">গ্রাম থেকে প্রতি কেজি দাম নির্ণয়</option>
+</select>
+</div>
+<div class="input">
+<div class="first">
+  <input type="number" id="firstValue" oninput="calculate()" required="">
+  <label for="firstValue" id="label1"></label>
+</div>
+<div class="last">
+  <input type="number" id="lastValue" oninput="calculate()" required="">
+  <label for="lastValue" id="label2"></label>
+</div>
+<div class="result">
+  <p id="resultStatus"></p><span id="resultValue"></span>
+  </div>
+</div>
+</div>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

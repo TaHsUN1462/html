@@ -1,0 +1,153 @@
+@font-face
+{
+  font-family: 'Solaiman';
+  src: url(SolaimanLipi.ttf);
+  font-size: 1.2em;
+}
+@font-face
+{
+  font-family: 'SUTOM';
+  src: url(SUTOM___.TTF);
+  font-size: 1.2em;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #181818;
+  flex-direction: column;
+  font-family: "Solaiman";
+}
+.container
+{
+  max-width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #525252;
+  flex-direction: column;
+  padding: 35px 20px;
+  border-radius: 10px;
+  -webkit-box-reflect: below 0px
+  linear-gradient(transparent 20%, rgba(0,0,0,0.2));
+  box-shadow: 0 0 20px rgba(255, 255,255,0.25);
+}
+.select select
+{
+  font-family: "Solaiman";
+  padding: 10px 5px;
+  margin: 10px;
+  background: #ffcafb;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  font-size: 1.2em;
+  font-weight: 500;
+  -webkit-appearance: none;
+  text-align: center;
+}
+input 
+{
+  padding: 20px 10px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  font-family: "SUTOM";
+  line-height: 12;
+  caret-color: transparent;
+  vertical-align: top;
+  transition: 1s;
+}
+.input
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first
+{
+  position: relative;
+}
+.last 
+{
+  position: relative;
+}
+select option
+{
+  font-family: "Solaiman";
+}
+label
+{
+  position: absolute;
+  top: -9px;
+  left: 50px;
+  font-size: 1.5em;
+  color: white;
+}
+.result
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p
+{
+  font-size: 2em;
+  color: white;
+}
+span {
+  font-size: 2em;
+  font-family: "SUTOM";
+  position: relative;
+  bottom: 7px;
+  margin-left: 8px;
+  color: white;
+}
+.home{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: #DC2626;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: solid 1px black;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.home:hover{
+  border-radius: 12px;
+}
+.home:active{
+  border-radius: 15px;
+}
+input:valid
+{
+  outline: 2px solid lime;
+}
+input:invalid
+{
+  outline: 2px solid red;
+}
+input:focus 
+{
+  outline: 3px solid black;
+}
